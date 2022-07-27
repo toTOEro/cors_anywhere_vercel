@@ -18,7 +18,7 @@ export default async function handler(request, response) {
   
   
   const {status,data} = await getRequest(url);
-  
+  console.log(response)
   response.status(status).send(data);
 
   function getRequest(url) {
